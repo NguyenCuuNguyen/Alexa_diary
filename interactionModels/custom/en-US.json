@@ -1,0 +1,139 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my expenses",
+      "intents": [
+        {
+          "name": "AddExpense",
+          "slots": [
+            {
+              "name": "Amount",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "Category",
+              "type": "CATEGORIES"
+            }
+          ],
+          "samples": [
+            "I paid {Amount} for {Category}",
+            "Add {Amount} for {Category}",
+            "{Amount} for {Category}",
+            "paid {Amount} for {Category}",
+            "for {Category} paid {Amount}",
+            "{Amount} paid for {Category}"
+          ]
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "Repeat",
+            "Say it again"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help",
+            "help me"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel",
+            "Never mind",
+            "Forget it",
+            "Exit"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "Yes"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "No"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": [
+            "Go home"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Dining out"
+              }
+            },
+            {
+              "name": {
+                "value": "Groceries"
+              }
+            },
+            {
+              "name": {
+                "value": "Fuel"
+              }
+            },
+            {
+              "name": {
+                "value": "Car"
+              }
+            },
+            {
+              "name": {
+                "value": "Traveling"
+              }
+            },
+            {
+              "name": {
+                "value": "Loan"
+              }
+            },
+            {
+              "name": {
+                "value": "Internet"
+              }
+            },
+            {
+              "name": {
+                "value": "Telephone"
+              }
+            },
+            {
+              "name": {
+                "value": "Credit Card "
+              }
+            },
+            {
+              "name": {
+                "value": "Other"
+              }
+            }
+          ],
+          "name": "CATEGORIES"
+        }
+      ]
+    }
+  },
+  "version": "23"
+}
