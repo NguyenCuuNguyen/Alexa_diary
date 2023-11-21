@@ -1,2 +1,2 @@
 # Alexa_diary
-Alexa Skill application to keep track
+Alexa Skill application is used to keep track of Personal health information.
